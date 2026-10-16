@@ -1,0 +1,11 @@
+name: ✨ Feature / design idea
+description: Suggest a detail, animation or improvement
+labels: [enhancement]
+body:
+  - type: textarea
+    id: idea
+    attributes: { label: Idea, description: What should be added or changed, and why? }
+    validations: { required: true }
+  - type: textarea
+    id: refs
+    attributes: { label: References, description: Describe or link public references (don't upload copyrighted photos to the repo). }

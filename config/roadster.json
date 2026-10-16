@@ -1,0 +1,32 @@
+{
+  "id": "roadster",
+  "name": "Roadster",
+  "version": "0.1.0-alpha",
+  "status": "in-development",
+  "description": "Fan-made flying roadster car body for Rocket League (client-side, visual only).",
+  "game": {
+    "engine": "Unreal Engine 3",
+    "packageFolder": "TAGame/CookedPCConsole",
+    "defaultPaths": [
+      "C:/Program Files/Epic Games/rocketleague",
+      "C:/Program Files (x86)/Steam/steamapps/common/rocketleague"
+    ]
+  },
+  "hitbox": {
+    "preset": "Dominus",
+    "lengthUU": 127.93,
+    "widthUU": 83.28,
+    "heightUU": 31.30,
+    "tolerancePercent": 8
+  },
+  "replace": {
+    "targetPackage": "Body_MuscleCar_SF.upk",
+    "sourcePackage": "dist/Body_Roadster_SF.upk",
+    "_note": "Verify the target file name in your own CookedPCConsole folder before installing. Package names can change between game updates."
+  },
+  "budget": {
+    "lod0Triangles": 12000,
+    "textureSize": 2048,
+    "textures": ["Diffuse", "Normal", "RGB paint mask"]
+  }
+}

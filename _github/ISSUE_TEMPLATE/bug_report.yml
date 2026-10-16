@@ -1,0 +1,19 @@
+name: 🐞 Bug report
+description: Something doesn't work (installer, model, textures)
+labels: [bug]
+body:
+  - type: input
+    id: version
+    attributes: { label: Mod version, placeholder: "0.1.0-alpha" }
+    validations: { required: true }
+  - type: dropdown
+    id: launcher
+    attributes: { label: Launcher, options: [Epic Games, Steam] }
+    validations: { required: true }
+  - type: textarea
+    id: what
+    attributes: { label: What happened?, description: Steps, expected vs actual. Paste the installer output. }
+    validations: { required: true }
+  - type: textarea
+    id: screens
+    attributes: { label: Screenshots, description: Drag images here (Free Play / private match). }
